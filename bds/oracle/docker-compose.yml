@@ -1,0 +1,22 @@
+services:
+  oracle:
+    container_name: oracle
+    image: container-registry.oracle.com/database/express:latest
+    volumes:
+      - oracle_volume:/opt/oracle/oradata
+      - oracle_volume:/opt/oracle/scripts/setup
+      - ./startup:/opt/oracle/scripts/startup
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      - ORACLE_PWD=123456
+    networks:
+      - oracle_network
+networks:
+  oracle_network:
+    name: development_network
+    external: true
+volumes:
+  oracle_volume:
+    name: oracle_volume

@@ -1,0 +1,46 @@
+## CONCEPTOS
+Encapsulamiento: Se oculta la implementación y se provee métodos para ejecutar las acciones
+
+
+
+
+
+########################################################## C++
+
+
+
+
+
+########################################################## JAVA
+################# JAVA 8
+#Scanner
+Integer i = scan.nextInt();
+Double d = scan.nextDouble();
+scan.nextLine();//cuando se usa el nextInt() o nextDouble(), estos no dejan el cursor en la siguiente línea entonces para poder leer un string que venga toca hacer esto
+String s = scan.nextLine();
+### JAVA 17
+
+
+
+
+
+
+########################################################## SPRING BOOT
+
+
+
+
+
+
+
+
+
+
+
+
+
+########################################################## SQL
+
+
+
+

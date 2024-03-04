@@ -1,0 +1,5 @@
+com.development.commons.shared.spring.exceptions.RestExceptionsHandler
+com.development.commons.shared.spring.filter.LoggingFilter
+com.development.commons.shared.spring.rest_template.HttpClientHelper
+com.development.commons.shared.spring.rest_template.RestTemplateConfig
+com.development.commons.shared.spring.message.CustomMessageSource

@@ -1,0 +1,12 @@
+1. contanerización y orquestación
+2. DevOps
+3. Implementar gestor de colas KAFKA
+
+
+3. Implementar sockets en spring
+
+5. Estudiar SOLID
+6. Implementar Java OpenTelemetry
+7. Implementar spring cloud
+4. Hacer pruebas de carga para ambos
+6. Subir la BD a Azure

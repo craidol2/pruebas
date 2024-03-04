@@ -1,0 +1,18 @@
+ALTER SESSION SET container = XEPDB1;
+CREATE TABLE PUBLICATIONS.PUBLICATIONS (
+    id NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+    id_user VARCHAR2(36) NOT NULL,
+    title VARCHAR2(50) NOT NULL,
+    description VARCHAR2(50) NOT NULL,
+    target_amount NUMBER NOT NULL,
+    published_date DATE NOT NULL,
+    deadline DATE NOT NULL,
+    refund_date DATE NOT NULL,
+    current_amount NUMBER NOT NULL,
+    interest NUMBER NOT NULL,
+    state VARCHAR2(20) NOT NULL,
+    image VARCHAR2(2000) NOT NULL,
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP,
+    FOREIGN KEY (id_user) REFERENCES PUBLICATIONS.USERS(id)
+);

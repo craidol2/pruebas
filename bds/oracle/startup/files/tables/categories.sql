@@ -1,0 +1,10 @@
+ALTER SESSION SET container = XEPDB1;
+CREATE TABLE PUBLICATIONS.CATEGORIES (
+    id NUMBER PRIMARY KEY,
+    title VARCHAR2(50) NOT NULL,
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP,
+    UNIQUE (title)
+);
+
+INSERT INTO PUBLICATIONS.CATEGORIES (id, title, created_at, updated_at) VALUES (1, 'RURAL', SYSTIMESTAMP, null);
